@@ -1,4 +1,3 @@
-const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPlugin')
 const { merge } = require("webpack-merge");
 
@@ -12,10 +11,6 @@ const devConfig = {
     historyApiFallback: true,
   },
     plugins: [
-      new HtmlWebpackPlugin({
-        template: "./public/index.html",
-      }),
-
       new ModuleFederationPlugin({
         name:'marketingApp',
         filename: 'remoteEntry.js',
