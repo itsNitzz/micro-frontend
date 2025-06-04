@@ -12,7 +12,7 @@
 
  if(process.env.NODE_ENV === 'development'&&htmlElRef){
     mount(htmlElRef)
-    console.log('marketing')
+    console.log('marketing page')
  }
 
 export {mount};
