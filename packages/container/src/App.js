@@ -4,7 +4,7 @@ import MarketingRoot from './components/MarketingRoot';
 
 const App = () => {
     return <>
-    <h1>Marketing App</h1>
+    <h1>Marketing page</h1>
     <hr/>
        <MarketingRoot/>
     </>
