@@ -16,7 +16,8 @@ const prodConfig = {
         new ModuleFederationPlugin({
             name: 'container',
             remotes:{
-                marketing: `marketingApp@${prodDomain}/marketing/latest/remoteEntry.js`
+                marketing: `marketingApp@${prodDomain}/marketing/latest/remoteEntry.js`,
+                auth: `authApp@${prodDomain}/auth/latest/remoteEntry.js`
             },
             shared : packages.dependencies
         })
